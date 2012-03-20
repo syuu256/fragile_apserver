@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE siw[
+    <!ENTITY ds "java:comp/env/jdbc/datasource">
+    <!ENTITY pa "org.sf.fragile.service.">
+]>
+<container>
+
+    <component id="FOO_MOCK" create='create' type='bean' src='jp.gr.java_conf.fragile.commons.container.FooMockImpl'>
+        <injection>
+            <method name="setBarMock" id='BAR_MOCK' />
+        </injection>
+        <aspect>
+            <method name="execute" id='INTERCEPTOR' />
+        </aspect>
+    </component>
+    <component id='BAR_MOCK' create='singleton' type='bean' src='jp.gr.java_conf.fragile.commons.container.BarMockImpl' />
+    <component id='INTERCEPTOR' create='aspect' type='bean' src='jp.gr.java_conf.fragile.commons.container.InterceptorImpl' />
+
+</container>

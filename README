@@ -1,0 +1,17 @@
+// ===============================================
+2012/03/20 miyakwa osamu (syuu256\gimal.com)
+
+GitHub project for testing
+not run up future version.
+
+// ===============================================
+2010/06/24 miyakwa osamu (syuu256\gimal.com)
+
+簡易DIコンテナベースの簡易APサーバ
+作成の経緯
+☆ 勉強
+☆ 仕事でフリー禁止とか言われたから
+☆ websocketで良い実装無いので・・・(2010/04/24現在)
+    androidからwebsocketとばしたいのよ・・・・
+☆ JavaEE作る気無いので
+☆ スレッドとイベントのハイブリッドHTTPDが欲しかったので
